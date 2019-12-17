@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Main"
         mc:Ignorable="d"
-        Title="Barometric Pressure Calculator" Height="450" Width="800">
+        Title="Barometric Pressure Calculator" Height="350" Width="300">
     <Grid>
         <Label Name="AltLabel" Content="Enter Altitude" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,220"></Label>
         <TextBox x:Name="Altitude" Width="100" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,200"></TextBox>
