@@ -25,7 +25,7 @@ namespace Main
             InitializeComponent();
         }
 
-        private double calculate(double g, double M, double R, double p0, double h0, double h, double T)
+        public static double calculate(double g, double M, double R, double p0, double h0, double h, double T)
         {
             return Math.Pow((p0 * Math.E), (-g * M * (h - h0) / (R * T)));
         }
@@ -38,8 +38,8 @@ namespace Main
             double p0 = 1;
             double h0 = 0;
             double h = double.Parse(Altitude.Text);
-            double T = double.Parse(Temperature.Text);
-            string output = calculate(g, M, R, p0, h0, h, T).ToString("F2");
+            double T = double.Parse(Temperature.Text) + 273.15;
+            string output = calculate(g, M, R, p0, h0, h, T).ToString("F4");
             Pressure.Text = output;
         }
     }
